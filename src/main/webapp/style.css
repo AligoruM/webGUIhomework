@@ -1,0 +1,36 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#History {
+    table-layout:fixed;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+input#a, #b , #c{
+    width: 60px;
+}
+
+table#History td, th{
+    width: 150px;
+    text-align: center;
+}
+
+table#History tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+table, th, td {
+    text-align: center;
+    border: 1px solid #2e2e2e;
+    margin-inside: auto;
+}
+
+table th, table td {
+    padding: 10px;
+}

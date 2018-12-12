@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Solving square equations</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "scripts.js"></script>
+</head>
+<body>
+<form action="calculate" method="post" id="main_form" name="main_form">
+    <table id="coeffs">
+        <thead>
+        <tr>
+            <th>Решения квадратных уравнений</th>
+        </tr>
+        <tr>
+            <th>Введите коэффициенты a, b, c уравнения</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <input type="text" name="a" id="a" maxlength="10" placeholder="A" required>
+                <label for="a">x</label><sup>2</sup>+
+                <input type="text" name="b" id="b" maxlength="10" placeholder="B">
+                <label for="b">x+</label>
+                <input type="text" name="c" id="c" maxlength="10" placeholder="C">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="Submit"></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <p id="dialog"></p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+<table id="History">
+    <thead>
+    <tr>
+        <th>Coeffs</th>
+        <th>Roots</th>
+        <th><button type="button" id="delete-row">Delete Row</button></th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+</body>
+</html>
