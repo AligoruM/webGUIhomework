@@ -33,14 +33,15 @@ $(document).ready(function () {
                 $('#History tbody').prepend(markup);
             });
 
-            $("#delete-row").click(function(){
-                $("#History tbody").find('input[name="record"]').each(function(){
-                    if($(this).is(":checked")){
-                        $(this).parents("tr").remove();
-                    }
-                });
-            });
+
         }
         event.preventDefault();
+    });
+    $("#delete-row").click(function(){
+        $("#History tbody").find('input[name="record"]').each(function(){
+            if($(this).is(":checked")){
+                $(this).parents("tr").remove();
+            }
+        });
     });
 });
